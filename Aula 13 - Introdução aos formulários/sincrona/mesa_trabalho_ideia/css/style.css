@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ========  body ============= */
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #3fc5f4;
+    height: 700px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* ============ section ========= */
+section{
+    margin: auto;
+    width: 18%;
+}
+
+h2{
+    font-family: 'Lobster', cursive;
+    text-shadow: 15px 15px 10px black;
+    
+}
+
+
+header img{
+    width: 150px;
+    animation: pulse alternate 2s infinite ;
+    transform: scale(1);
+
+}
+
+@keyframes pulse {
+    from {transform:scale(1);}
+    to {transform: scale(1.10);}
+    
+}
+
+/* ============ form ================== */
+
+form{
+    background-color: rgba(255, 8, 8, 0.822);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto 0;
+    padding: 20px;
+
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 5px 6px 5px black;
+
+    color: #cdf100;
+   
+}
+
+input{
+    outline: none;
+}
+
+div.nome-email input{
+    display: block-inline;
+    margin: 10px 0;
+    padding: 3px;
+    width: 100%;
+    border: 1.5px solid black;
+    box-shadow: 1px 1px 1px black;
+
+    
+}
+
+.nome-email input[placeholder]{
+    text-align: center;
+}
+
+
+#assuntos h4 {
+    margin: 20px 0;
+}
+
+#assuntos label, input {
+    font-family: 'Lobster', cursive; ;
+    margin-left: 6px ;
+}
+
+div#assuntos input{
+    display:inline-block;
+    margin-bottom: 20px;
+}
+
+#frequencia{
+    background-color: rgba(128, 128, 128, 0.671);
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 4px 2px 5px black;
+    margin-bottom: 20px;
+
+}
+
+
+#frequencia h4 {
+
+    margin: 5px 0;
+
+}
+
+#frequencia label{
+    margin-left: 15px;
+} 
+
+#frequencia input,label{
+    margin: 10px 0;
+
+}
+
+#frequencia .bolinha{
+    position: relative;
+    left: -9.6px;
+}
+
+#frequencia .bolinha-um{
+    position: relative;
+    left: -3px;
+}
+
+button{
+    padding: 5px;
+    width: 100px;
+    margin: 0 10px  ;
+    border-radius: 5px;
+}
+
