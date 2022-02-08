@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-size: 50px;
+    --corDeFundo: black;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background: var(--corDeFundo);
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 0.8rem;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 0.8rem;
+}
+
+p {
+    font-size: 0.4rem;
+    text-align: justify;
+}
+
+h1::first-letter {
+    color: red;
+}
+
+header ul {
+    display: flex;
+    gap: 5px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 9px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+header li a:hover {
+    background-color: red;
+    color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 15px 60px;
+}
+
+#banner {
+    background-image: url('../img/brazil.png');
+    height: 100vh;
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.125rem;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.card-game img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover; /* mesma coisa do background-cover. Imagem não perde a proporção */
+    transition: all .3s ease-in-out;
+}
+
+.image-container {
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    border: 10px groove lightgray;
+    border-radius: 10px;
+}
+
+.card-game img:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 10px 90px;
+    font-weight: bold;
+    border-radius: 9px;
+    border: none;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+}
+
+#jalapao+#fozdoiguacu {
+    margin-top: 60px;
+}
+
+@media (max-width: 1065px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 785px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 492px) {
+    header {
+        flex-direction: column;
+    }
+    header h1 {
+        margin-bottom: 20px;
+    }
+    header ul li {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 343px) {
+    header li a {
+        padding: 5px;
+    }
+    #banner {
+        height: calc(100vh - 103px);
+    }
+    main {
+        padding: 15px 30px;
+    }
+}
